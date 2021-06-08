@@ -1,0 +1,16 @@
+<div class="card p-2 mb-3 mt-3" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Full Name</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Your name">
+            <small id="emailHelp" class="form-text text-muted">your full name.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Your name">
+            <small id="emailHelp" class="form-text text-muted"> your email.</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

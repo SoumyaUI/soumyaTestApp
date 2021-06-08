@@ -1,0 +1,8 @@
+<div class="container">
+  <div *ngIf="loading && users.length">
+  <h4 class="mt-3 mb-3">Select table row to populate editable form</h4>
+  <app-table [users]="users" (selectedData)="selectedData($event)" ></app-table>
+</div>
+  <app-form *ngIf="selectedUser" [data]="selectedUser"></app-form>
+</div>
+
